@@ -5,7 +5,7 @@ programa para calcular o desconto de funcionarios se o funcionário tiver um sal
 
 */
 #include <stdio.h>
-#define limite 5000.00
+#define LIMITE 5000.00
 
 int main() {
 
@@ -14,7 +14,7 @@ printf("Digite o salário do funcionário e tecle enter!\n");
 scanf("%f", &salarioFuncionario);
 
 
-if (salarioFuncionario > limite){
+if (salarioFuncionario > LIMITE){
 printf("O funcionário terá o desconto de %2.f\n", (salarioFuncionario*0.05));
 printf("O valor final é %2.f\n", salarioFuncionario - (salarioFuncionario*0.05));
 }

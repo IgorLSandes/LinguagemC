@@ -10,7 +10,7 @@ reprovado.
 //incluir o cabeçalho de entrada e saída de dados padrão, que é o
 #include <stdio.h>
 //definir uma constante sempre em letras maiusculas
-#define mediaescola 7.0
+#define MEDIAESCOLA 7.0
 
 //iniciar o programa
 int main () {
@@ -20,7 +20,7 @@ float notaAluno;
 printf("Digite a nota do aluno e aperte *enter*\n");
 scanf("%f", &notaAluno);
 //desvio de fluxo com if ... else
-if (notaAluno >= mediaescola){
+if (notaAluno >= MEDIAESCOLA){
  printf("O aluno esta aprovado!\n");
 
 
