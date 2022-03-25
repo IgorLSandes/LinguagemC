@@ -5,19 +5,25 @@ void main () {
 char nome[30];
 int idade, bemAlimentado, resfriado;
 float peso;
-printf("Informe o nome:");
+
+printf("Informe o nome:\n");
 scanf("%s", &nome);
-printf("Informe o peso:");
+printf("Informe o peso:\n");
 scanf("%f", &peso);
-printf("Está bem alimentado ? <1-SIM / 0-NÃO>");
+printf("Qual a sua idade %s?\n", nome);
+scanf("%d", &idade);
+printf("Você esta bem alimentado?\n <1-SIM / 0-NÃO>\n");
 scanf("%d", &bemAlimentado);
-printf("Esta resfriado? <1-SIM / 0-NÃO>");
+printf("Você esta resfriado?\n <1-SIM / 0-NÃO>\n");
 scanf("%d", &resfriado);
 
-if (peso>=50 && (idade >= 16 && idade <= 69)
-&& bemAlimentado && !resfriado)
-printf("O voluntario %s esta apto!", nome);
-else
-printf("O voluntario %s NAO esta apto", nome);
+system("clear");
 
+if (peso >=  50 && (idade >= 16 && idade <= 69)
+&& bemAlimentado && !resfriado)
+printf("\n\n\nO voluntário %s está apto!\n\n\n\n\n\n\n\n", nome);
+else
+printf("\n\n\nO voluntário %s não está apto!\n\n\n\n\n\n\n\n", nome);
+
+return 0;
 }
