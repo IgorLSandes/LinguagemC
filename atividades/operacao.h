@@ -77,7 +77,7 @@ printf("\nDigite o telefone da unidade.\n");
 fgets(puni->telefone,15,stdin);
 
 
-//gravar o nome do arquivo
+//gravar o nome do arquivo no .txt
 
 fprintf(arquivo,pcur->nomedocurso);
 fprintf(arquivo,pcur->descricao);
