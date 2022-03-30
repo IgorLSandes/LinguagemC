@@ -1,3 +1,10 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "operacao.h": "c",
+        "curso.h": "c",
+        "stdio.h": "c",
+        "unidade.h": "c",
+        "stdlib.h": "c"
+    }
 }
