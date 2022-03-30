@@ -13,10 +13,10 @@ typedef struct dados_curso
 {
 char nomedocurso[30];
 char descricao[300];
-char cargahoraria[10];
-char datadeinicio[10];
-char datatermino[10];
-char preco[10];
+char cargahoraria[20];
+char datadeinicio[15];
+char datatermino[15];
+char preco[20];
 
 }curso;
 

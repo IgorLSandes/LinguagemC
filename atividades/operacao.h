@@ -29,7 +29,6 @@ Este arquivo fica disponível em memória até o fechamento do arquivo
         exit(1);
     }
 
-    */
 
 /*
 Criando um ponteiro
@@ -51,19 +50,19 @@ printf("\nDigite o nome do curso que você deseja criar.\n");
 fgets(pcur->nomedocurso,30,stdin);
 
 printf("\nDigite a descrição do curso.\n");
-fgets(pcur->descricao,30,stdin);
+fgets(pcur->descricao,300,stdin);
 
 printf("\nDigite a carga horária do curso.\n");
-fgets(pcur->cargahoraria,10,stdin);
+fgets(pcur->cargahoraria,20,stdin);
 
 printf("\nDigite a data de inicio do curso.\n");
-fgets(pcur->datadeinicio,10,stdin);
+fgets(pcur->datadeinicio,15,stdin);
 
 printf("\nDigite a data de término do curso.\n");
-fgets(pcur->datatermino,10,stdin);
+fgets(pcur->datatermino,15,stdin);
 
 printf("\nDigite o valor do curso.\n");
-fgets(pcur->preco,10,stdin);
+fgets(pcur->preco,20,stdin);
 
 printf("\nDigite a unidade do curso.\n");
 fgets(puni->nomeunidade,30,stdin);
@@ -80,16 +79,16 @@ fgets(puni->telefone,15,stdin);
 
 //gravar o nome do arquivo
 
-fprintf(arquivo,puni->horariodefuncionamento);
-fprintf(arquivo,puni->localizacao);
-fprintf(arquivo,puni->nomeunidade);
-fprintf(arquivo,puni->telefone);
+fprintf(arquivo,pcur->nomedocurso);
+fprintf(arquivo,pcur->descricao);
 fprintf(arquivo,pcur->cargahoraria);
 fprintf(arquivo,pcur->datadeinicio);
 fprintf(arquivo,pcur->datatermino);
-fprintf(arquivo,pcur->descricao);
-fprintf(arquivo,pcur->nomedocurso);
 fprintf(arquivo,pcur->preco);
+fprintf(arquivo,puni->nomeunidade);
+fprintf(arquivo,puni->localizacao);
+fprintf(arquivo,puni->horariodefuncionamento);
+fprintf(arquivo,puni->telefone);
 
 
 //tirar o arquivo da memoria e fechar o arquivo
